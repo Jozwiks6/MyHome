@@ -32,6 +32,7 @@
 
         <mapping class="pl.camp.it.myhome.model.User"/>
         <mapping class="pl.camp.it.myhome.model.Flat"/>
+        <mapping class="pl.camp.it.myhome.model.Location"/>
 
     </session-factory>
 </hibernate-configuration>

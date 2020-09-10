@@ -15,8 +15,10 @@ public class User {
     private String firstName;
     @Column(nullable = false)
     private String lastName;
-    @Column(nullable = false)
+    @Column(nullable = false, unique = true)
     private String email;
+    @Column(nullable = false)
+    private Boolean enabled = Boolean.TRUE;
 
     public int getId() { return id; }
 
@@ -42,6 +44,10 @@ public class User {
 
     public void setEmail(String email) { this.email = email; }
 
+    public Boolean getEnabled() { return enabled; }
+
+    public void setEnabled(Boolean enabled) { this.enabled = enabled; }
+
     @Override
     public String toString() {
         return "User{" +
@@ -51,6 +57,7 @@ public class User {
                 ", firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
                 ", email='" + email + '\'' +
+                ", enabled=" + enabled +
                 '}';
     }
 }

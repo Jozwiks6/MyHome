@@ -1,4 +1,5 @@
 pl/camp/it/myhome/services/App.class
 pl/camp/it/myhome/services/AppConfiguration.class
+pl/camp/it/myhome/model/Location.class
 pl/camp/it/myhome/model/User.class
 pl/camp/it/myhome/model/Flat.class

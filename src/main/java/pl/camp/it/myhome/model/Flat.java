@@ -1,5 +1,6 @@
 package pl.camp.it.myhome.model;
 
+import org.hibernate.annotations.CollectionId;
 import org.springframework.context.annotation.ComponentScan;
 
 import javax.persistence.*;
@@ -10,35 +11,35 @@ public class Flat {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     @Column(nullable = false)
-    private String city;
+    private Integer squareMeters;
     @Column(nullable = false)
-    private String address;
+    private int floor;
     @Column(nullable = false)
-    private Integer square_meters;
+    private Boolean parkingField ;
     @Column(nullable = false)
-    private double overnight_price;
-    @Column(nullable = false, length = 300)
+    private Double overnightPrice;
+    @Column(nullable = false)
     private String description;
 
     public int getId() { return id; }
 
     public void setId(int id) { this.id = id; }
 
-    public String getCity() { return city; }
+    public Integer getSquareMeters() { return squareMeters; }
 
-    public void setCity(String city) { this.city = city; }
+    public void setSquareMeters(Integer squareMeters) { this.squareMeters = squareMeters; }
 
-    public String getAddress() { return address; }
+    public int getFloor() { return floor; }
 
-    public void setAddress(String address) { this.address = address; }
+    public void setFloor(int floor) { this.floor = floor; }
 
-    public Integer getSquare_meters() { return square_meters; }
+    public Boolean getParkingField() { return parkingField; }
 
-    public void setSquare_meters(Integer square_meters) { this.square_meters = square_meters; }
+    public void setParkingField(Boolean parkingField) { this.parkingField = parkingField; }
 
-    public double getOvernight_price() { return overnight_price; }
+    public Double getOvernightPrice() { return overnightPrice; }
 
-    public void setOvernight_price(double overnight_price) { this.overnight_price = overnight_price; }
+    public void setOvernightPrice(Double overnightPrice) { this.overnightPrice = overnightPrice; }
 
     public String getDescription() { return description; }
 
@@ -48,10 +49,10 @@ public class Flat {
     public String toString() {
         return "Flat{" +
                 "id=" + id +
-                ", city='" + city + '\'' +
-                ", address='" + address + '\'' +
-                ", square_meters=" + square_meters +
-                ", overnight_price=" + overnight_price +
+                ", squareMeters=" + squareMeters +
+                ", floor=" + floor +
+                ", parkingField=" + parkingField +
+                ", overnightPrice=" + overnightPrice +
                 ", description='" + description + '\'' +
                 '}';
     }
