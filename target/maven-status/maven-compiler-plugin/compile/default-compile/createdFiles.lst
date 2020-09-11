@@ -1,5 +1,12 @@
-pl/camp/it/myhome/services/App.class
-pl/camp/it/myhome/services/AppConfiguration.class
-pl/camp/it/myhome/model/Location.class
+pl/camp/it/myhome/services/impl/UserServiceImpl.class
+pl/camp/it/myhome/AppConfiguration.class
+pl/camp/it/myhome/dao/impl/UserDAOImpl.class
+pl/camp/it/myhome/controllers/CommonController.class
 pl/camp/it/myhome/model/User.class
+pl/camp/it/myhome/model/Location.class
+pl/camp/it/myhome/dao/IUserDAO.class
+pl/camp/it/myhome/App.class
 pl/camp/it/myhome/model/Flat.class
+pl/camp/it/myhome/model/Admin.class
+pl/camp/it/myhome/session/SessionObject.class
+pl/camp/it/myhome/services/IUserService.class

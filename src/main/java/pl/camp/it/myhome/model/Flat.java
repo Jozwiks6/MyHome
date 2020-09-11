@@ -1,5 +1,7 @@
 package pl.camp.it.myhome.model;
 
+
+
 import org.hibernate.annotations.CollectionId;
 import org.springframework.context.annotation.ComponentScan;
 
@@ -18,8 +20,11 @@ public class Flat {
     private Boolean parkingField ;
     @Column(nullable = false)
     private Double overnightPrice;
-    @Column(nullable = false)
+    @Column(nullable = false, length = 200)
     private String description;
+    @OneToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    private Location location;
+
 
     public int getId() { return id; }
 
@@ -45,6 +50,10 @@ public class Flat {
 
     public void setDescription(String description) { this.description = description; }
 
+    public Location getLocation() { return location; }
+
+    public void setLocation(Location location) { this.location = location; }
+
     @Override
     public String toString() {
         return "Flat{" +
@@ -54,6 +63,7 @@ public class Flat {
                 ", parkingField=" + parkingField +
                 ", overnightPrice=" + overnightPrice +
                 ", description='" + description + '\'' +
+                ", location=" + location +
                 '}';
     }
 }

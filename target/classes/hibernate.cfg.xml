@@ -28,11 +28,12 @@
 
         <property name="show_sql">true</property>
         <!-- koment -->
-        <property name="hbm2ddl.auto">create</property>
+        <property name="hbm2ddl.auto">update</property>
 
         <mapping class="pl.camp.it.myhome.model.User"/>
         <mapping class="pl.camp.it.myhome.model.Flat"/>
         <mapping class="pl.camp.it.myhome.model.Location"/>
+        <mapping class="pl.camp.it.myhome.model.Admin"/>
 
     </session-factory>
 </hibernate-configuration>

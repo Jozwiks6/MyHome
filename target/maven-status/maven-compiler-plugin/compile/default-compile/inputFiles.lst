@@ -1,5 +1,12 @@
-/home/jozwiks6/kurs/MyHome/src/main/java/pl/camp/it/myhome/services/App.java
 /home/jozwiks6/kurs/MyHome/src/main/java/pl/camp/it/myhome/model/User.java
 /home/jozwiks6/kurs/MyHome/src/main/java/pl/camp/it/myhome/model/Flat.java
-/home/jozwiks6/kurs/MyHome/src/main/java/pl/camp/it/myhome/services/AppConfiguration.java
+/home/jozwiks6/kurs/MyHome/src/main/java/pl/camp/it/myhome/services/IUserService.java
+/home/jozwiks6/kurs/MyHome/src/main/java/pl/camp/it/myhome/AppConfiguration.java
+/home/jozwiks6/kurs/MyHome/src/main/java/pl/camp/it/myhome/controllers/CommonController.java
+/home/jozwiks6/kurs/MyHome/src/main/java/pl/camp/it/myhome/model/Admin.java
+/home/jozwiks6/kurs/MyHome/src/main/java/pl/camp/it/myhome/services/impl/UserServiceImpl.java
+/home/jozwiks6/kurs/MyHome/src/main/java/pl/camp/it/myhome/dao/impl/UserDAOImpl.java
+/home/jozwiks6/kurs/MyHome/src/main/java/pl/camp/it/myhome/App.java
+/home/jozwiks6/kurs/MyHome/src/main/java/pl/camp/it/myhome/session/SessionObject.java
+/home/jozwiks6/kurs/MyHome/src/main/java/pl/camp/it/myhome/dao/IUserDAO.java
 /home/jozwiks6/kurs/MyHome/src/main/java/pl/camp/it/myhome/model/Location.java
