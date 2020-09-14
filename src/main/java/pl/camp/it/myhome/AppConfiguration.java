@@ -5,16 +5,17 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.context.annotation.SessionScope;
-import pl.camp.it.myhome.session.SessionObject;
+
 
 @Configuration
-@ComponentScan("pl.camp.it.myhome.")
+@ComponentScan("pl.camp.it.myhome")
 public class AppConfiguration {
 
 
-    /*public SessionFactory sessionFactory(){
+    @Bean
+    public SessionFactory sessionFactory(){
         return new org.hibernate.cfg.Configuration().configure().buildSessionFactory();
-    }*/
+    }
 
     /*@Bean
     @SessionScope

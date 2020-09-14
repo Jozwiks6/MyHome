@@ -8,12 +8,12 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.hibernate.cfg.Configuration;
 
 
-
+@SpringBootApplication
 public class App {
 
-    public  static SessionFactory sessionFactory = new Configuration().configure().buildSessionFactory();
+
     public static void main(String[] args) {
 
-       // SpringApplication.run(App.class, args);
+       SpringApplication.run(App.class, args);
     }
 }
